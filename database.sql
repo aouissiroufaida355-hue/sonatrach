@@ -44,11 +44,9 @@ CREATE TABLE `autorisations` (
 -- Dumping data for table `autorisations`
 --
 
-LOCK TABLES `autorisations` WRITE;
 /*!40000 ALTER TABLE `autorisations` DISABLE KEYS */;
 INSERT INTO `autorisations` VALUES (1,2,NULL,'2024-07-01','2024-09-30','AUTH-2024-002','active','2026-05-18 22:56:34');
 /*!40000 ALTER TABLE `autorisations` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `cache`
@@ -70,10 +68,8 @@ CREATE TABLE `cache` (
 -- Dumping data for table `cache`
 --
 
-LOCK TABLES `cache` WRITE;
 /*!40000 ALTER TABLE `cache` DISABLE KEYS */;
 /*!40000 ALTER TABLE `cache` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `cache_locks`
@@ -95,10 +91,8 @@ CREATE TABLE `cache_locks` (
 -- Dumping data for table `cache_locks`
 --
 
-LOCK TABLES `cache_locks` WRITE;
 /*!40000 ALTER TABLE `cache_locks` DISABLE KEYS */;
 /*!40000 ALTER TABLE `cache_locks` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `contrats`
@@ -134,11 +128,9 @@ CREATE TABLE `contrats` (
 -- Dumping data for table `contrats`
 --
 
-LOCK TABLES `contrats` WRITE;
 /*!40000 ALTER TABLE `contrats` DISABLE KEYS */;
 INSERT INTO `contrats` VALUES (39,NULL,'2026-01-01','2026-05-01','valide',NULL,NULL,'GRH','2026-06-01 16:07:44','2026-06-01 17:07:38','2026-06-01 17:07:44','UNIVERSITE BOUMERDES','GERER STAGES ET STAGIAIRES ','SELLALI','DJOMANA','SELLALI DJOMANA, MERDES NABIL');
 /*!40000 ALTER TABLE `contrats` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `migrations`
@@ -159,11 +151,9 @@ CREATE TABLE `migrations` (
 -- Dumping data for table `migrations`
 --
 
-LOCK TABLES `migrations` WRITE;
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
 INSERT INTO `migrations` VALUES (1,'2026_05_19_121006_add_soft_deletes_to_stagiaires_table',1),(2,'0001_01_01_000001_create_cache_table',2);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `rendezvous`
@@ -194,11 +184,9 @@ CREATE TABLE `rendezvous` (
 -- Dumping data for table `rendezvous`
 --
 
-LOCK TABLES `rendezvous` WRITE;
 /*!40000 ALTER TABLE `rendezvous` DISABLE KEYS */;
 INSERT INTO `rendezvous` VALUES (3,NULL,'2026-01-11','11:11:00','Point d’avancement','fffhfffn',1,'2026-05-14 09:58:21','2026-05-27 01:34:17','MARDES','NABIL'),(4,NULL,'2024-11-13','12:12:00','Avancement du mémoire',NULL,0,'2026-05-14 11:28:39','2026-05-27 01:34:45','SAID','SARA');
 /*!40000 ALTER TABLE `rendezvous` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `stagiaires`
@@ -232,11 +220,9 @@ CREATE TABLE `stagiaires` (
 -- Dumping data for table `stagiaires`
 --
 
-LOCK TABLES `stagiaires` WRITE;
 /*!40000 ALTER TABLE `stagiaires` DISABLE KEYS */;
 INSERT INTO `stagiaires` VALUES (2,'SAID','Sara','sara.said@mail.com','0555222222','Réseaux','2024-07-01','2024-07-31','Oran','Oran','Mercredi',NULL,1,0,NULL),(4,'khelifi','khaoula',NULL,NULL,NULL,'2026-09-13','2026-11-11',NULL,NULL,'Lundi',NULL,3,0,NULL),(5,'aoudache','MANEL',NULL,NULL,NULL,'2026-11-11','2027-11-11',NULL,NULL,'Mardi','Ingénieur',4,0,NULL),(45,'merdes','nabil','nabilmerdes@gmail.com','0555222222','IA','2025-11-11','2026-11-12','Constantine','Alger','Jeudi','Master',4,0,NULL),(46,'sellali','djomana',NULL,'0786844184','INFORMATIQUE','2026-01-11','2026-05-11','BASKRA','ALGER','Mercredi','Ingénieur',NULL,0,NULL);
 /*!40000 ALTER TABLE `stagiaires` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `sujet_stagiaire`
@@ -261,11 +247,9 @@ CREATE TABLE `sujet_stagiaire` (
 -- Dumping data for table `sujet_stagiaire`
 --
 
-LOCK TABLES `sujet_stagiaire` WRITE;
 /*!40000 ALTER TABLE `sujet_stagiaire` DISABLE KEYS */;
 INSERT INTO `sujet_stagiaire` VALUES (4,6,4),(5,6,5);
 /*!40000 ALTER TABLE `sujet_stagiaire` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `sujets`
@@ -295,11 +279,9 @@ CREATE TABLE `sujets` (
 -- Dumping data for table `sujets`
 --
 
-LOCK TABLES `sujets` WRITE;
 /*!40000 ALTER TABLE `sujets` DISABLE KEYS */;
 INSERT INTO `sujets` VALUES (1,'Gestion des compétences','Plateforme de gestion des formations internes','Dr. Ahmed',2024,'Plateforme de gestion des formations internes','Gestion des formations, inscriptions, évaluations et certificats.','non_attribue_verrouille',1,NULL,'2026-04-30 10:14:53','2026-05-26 21:28:27'),(2,'Intelligence artificielle','Système intelligent de maintenance préventive','BEN Ali',2025,'Système intelligent de maintenance préventive','Utilisation de l’IA pour prévoir les pannes des équipements industriels','non_attribue_verrouille',6,NULL,'2026-04-30 10:14:53','2026-05-26 21:27:05'),(3,'Génie industriel','Plateforme de suivi des interventions techniques','Dr. Karim',2024,'Plateforme de suivi des interventions techniques','Gestion des équipes techniques, des missions et des rapports d’intervention.','non_attribue_ouvert',7,NULL,'2026-04-30 10:14:53','2026-05-26 17:05:22'),(4,'Maintenance industrielle','Application de gestion des équipements pétroliers','Dr. Karim',2025,'Application de gestion des équipements pétroliers','Suivi des équipements, maintenance, pannes et historique des interventions','soutenu',NULL,NULL,'2026-04-30 10:14:53','2026-05-26 17:04:02'),(6,'Informatique de gestion','SITE WEB POUR GERER LES STAGES ET STAGIAIRES','Dr. Ahmed',2024,'SITE WEB POUR GERER LES STAGES ET STAGIAIRES','d’ajouter et gérer les informations des stagiaires ;\nd’affecter un encadreur à chaque stagiaire ;\nde proposer et suivre les sujets de stage ;\nde gérer les contrats et la durée des stages','attribue',4,NULL,'2026-05-14 23:10:12','2026-05-26 17:04:56');
 /*!40000 ALTER TABLE `sujets` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `users`
@@ -323,11 +305,9 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` VALUES (1,'farid','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','grh','2026-04-30 10:14:20'),(2,'aourag ','03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','encadrant','2026-04-30 10:53:56');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -338,4 +318,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-06-02 21:24:29
+-- Dump completed on 2026-06-02 22:52:55
